@@ -1,0 +1,130 @@
+:root {
+    --mj-font-size : 1.5rem;
+    --mj-font-family: Roboto;
+    --mj-font-color: #ffffff;
+
+    --mj-color1: lightgray;
+    --mj-color2: skyblue;
+
+    --mj-red: red;
+    --mj-orange: orange;
+    --mj-blue: blue;
+    --mj-skyblue: royalblue;
+    --mj-yellow: yellow;
+    --mj-gray: gray;
+    --mj-green: green;
+    --mj-purple: purple;
+}
+
+html, body,
+header, main, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+header, main, footer,
+nav, section, article,
+div, span, p, ul,li{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--mj-font-family);
+    font-size: var(--mj-font-size);
+    width: 1200px;
+    height: 100vh;
+}
+
+main{
+    background-color: var(--mj-gray) ;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav{
+    background-color: var(--mj-skyblue);
+    padding: 10px;
+    
+    flex: 2;
+
+    text-align: center;
+}
+
+section{
+    background-color: var(--mj-orange);
+    padding: 20px;
+    flex: 8;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+ul {
+    /* 리스트모양?(앞에 점생기는거)을 없애준다. */
+    list-style: none;
+    border-bottom: 2px solid black;
+}
+
+a {
+    text-decoration: none;
+    color: var(--mj-font-color)
+}
+
+/* button,button:focus {
+    버튼과 버튼이 선택되었을때 설정값 없앰 
+    border: none;
+    cursor: pointer;
+    outline: none;
+} */
+
+.hidden{
+    display: none;
+}
+
+.boxes {
+    flex: 3;
+    padding-bottom: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.box {
+    background-color: var(--mj-green);
+}
+
+.images{
+    flex: 7;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.image{
+    background-color: var(--mj-purple);
+    background-size: cover;
+}
+
+.image:nth-child(1){
+    flex: 1;
+    background-image: url("http://www.matcl.com/files/attach/images/2791205/046/987/002/5f36790b4a28c24fa8979a60030a8d6f.jpg");
+}
+
+.image:nth-child(2){
+    flex: 2;
+    margin: 0 20px;
+    background-image: url("https://p4.wallpaperbetter.com/wallpaper/424/586/377/sky-4k-hd-high-definition-wallpaper-preview.jpg");
+    
+}
+
+.image:nth-child(3){
+    flex: 1;
+    background-image: url("https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistoryfile%2Ffs15%2F30_tistory_2009_02_24_21_15_49a3e4de817c9%3Foriginal");
+}
