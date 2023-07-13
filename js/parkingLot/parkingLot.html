@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Mijoeng"/>
+        <meta name="keywords" content=""/>
+        <meta name="discription" content=""/>
+        <title>parkingLot</title>
+
+        <script src="/mj/js/parkingLot/parkingLot.js"></script>
+
+        <style type="text/css">
+            body{
+                font-family: var(--mj-font-family);
+                font-size: var(--mj-font-size);
+                width: 100vw;
+                height: 100vh;
+
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            #main{
+                width: 30%;
+                height: 10%;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #calculateBtn {
+                cursor: pointer;
+                outline: none;
+
+                width: auto;
+
+                margin: 0;
+                padding: 0.5rem 1rem;
+
+                font-family: "Noto Sans KR", sans-serif;
+                font-size: 1rem;
+                font-weight: 400;
+                text-align: center;
+                text-decoration: none;
+
+                border-radius: 4px;
+                border: 1px solid white;
+                color : black;
+                background: white;
+            }
+
+            #calculateBtn:hover,
+            button:hover,
+            button:focus {
+                outline: 0;
+                
+                border: 1px solid black;
+                color : white;
+                background: black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="main">
+            <h2>주차 시간 직접 입력하기</h2> 
+            
+            <button id="calculateBtn" onclick="calculate()">요금 정산하기</button>
+        </div>
+        
+        <div id="main2">
+            
+        </div>
+    </body>
+</html>

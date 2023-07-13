@@ -1,0 +1,23 @@
+
+body{
+    /* padding: 100px; */
+}
+.main_div{
+    border: 2px solid white;
+    display: inline;
+    width: 200px;
+    padding: 5px;
+    margin: 20px;
+}
+
+.footer_div{
+    border: 2px solid white;
+    display: block;
+    width: 50px;
+}
+
+p{
+    border: 2px solid white;
+    display: inline;
+    width: 50px;
+}
